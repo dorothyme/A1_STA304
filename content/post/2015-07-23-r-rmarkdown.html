@@ -1,0 +1,50 @@
+---
+title: "Attitudes Toward Refugees and Immigrants in CES 2019"
+author: "Frida Gomam"
+date: 2020-09-27
+categories: ["R"]
+tags: ["R Markdown", "plot", "regression"]
+---
+
+
+
+<div id="abstract" class="section level2">
+<h2>Abstract</h2>
+<p>Immigrants and Refugees, as two comparable sources of newcomers, have attracted increasing attention from both the host government and local community. Summarizing the trend of domestic attitudes towards immigrants and refugees from the 2019 Canada Election phone survey, this report showed that the attitudes toward these two categories of migrants were highly correlated and consistent. In addition, it was also found that education played an important role in hostility toward migrants, with people who possess at least a Bachelor’s degree showing much less negative attitudes for both immigrants and refugees. Future research on this topic can focus on finding out other influencing factors for hostility toward migration, presumably socioeconomic status or ethnic/cultural background in order to better understand Canada’s public opinion towards migration.</p>
+</div>
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>As migration becomes more prevalent in this growingly interconnected international society, the domestic attitudes towards immigrants and refugees, as two comparable sources of newcomers, have become an important aspect of consideration when it comes to policy making and election running. While research has shown that individuals tend to deposition more favorability towards refugees than other types of migrants due to media framing (Coninck, 2020), public opinions on immigration and refuge are largely consistent at both continental and global scales (Dempster &amp; Hargrave, 2017). Moreover, in younger, more liberal and better educated populations, less hostility were observed towards both immigrants and refugees (Dempster &amp; Hargrave, 2017). In this report,I will visualize data from the 2019 Canada Election phone survey to show if there is a consistency between public opinions towards immigrants and refugees, as well as to navigate if these attitudes can be associated to education levels.</p>
+<pre><code>## TO CITE THIS SURVEY FILE:
+## 
+## - Stephenson, Laura B; Harell, Allison; Rubenson, Daniel; Loewen, Peter John, 2020, &#39;2019 Canadian Election Study - Phone Survey&#39;, https://doi.org/10.7910/DVN/8RHLG1, Harvard Dataverse, V1, UNF:6:eyR28qaoYlHj9qwPWZmmVQ== [fileUNF]
+## 
+## - Stephenson, Laura, Allison Harrel, Daniel Rubenson and Peter Loewen. Forthcoming. &#39;Measuring Preferences and Behaviour in the 2019 Canadian Election Study,&#39; Canadian Journal of Political Science.
+## 
+## LINK: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/8RHLG1</code></pre>
+<p><img src="/post/2015-07-23-r-rmarkdown_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+</div>
+<div id="discussion" class="section level2">
+<h2>Discussion</h2>
+<p>The graph is plotted by education group: responses from those who possess at least a Bachelor’s degree were plotted on the left, and those who didn’t on the right. Within each education group, attitudes toward immigrants are plotted at the x-axis, and the y-axis shows the number of counts for each type of response. The filling of each bar is the attitudes toward refugees, separated by color.</p>
+<p>From the height of bars, it is obvious that the majority of people surveyed in the CES phone study did not possess a Bachelor’s degree, and indeed, a larger proportion of negative prospects, manifested as “Fewer Immigrants/Refugees” or “Refused”, were observed in this population in the right-hand graph. Within each education group, attitudes toward immigrants and refugees seemed, although not perfectly, consistent; that is to say, in people who think there should be more immigrants, it is very likely that they also think there should be more refugees. In both groups, the majority of people think that the number of immigrants and refugees should be kept as it is at the moment.</p>
+<p>Unlike what was found in this graph, in Coninck’s study (2020), more positive attitudes towards refugees than immigrants were observed. This could be because the study took place in Europe, where the way less racial and cultural diversity exists than it does in North America. According to Rourke and Sinnott’s (2006) theory of cultural considerations, individuals with greater exposure to other cultures will hold less hostility towards immigration, so it is not surprising that Canada’s public opinion on migration is more open than predicted by European studies. In addition, based on trade theory, opposition towards immigration will only emerge when the economic ground of locals were invaded by immigration through competition in the labour market (Rourke &amp; Sinnott, 2006). Given that people with higher educational status are more likely to be in professions that demand specific training and skills, it is less likely that they will be in rapid job competition with newcomers, hence more positive prospects on migration.</p>
+</div>
+<div id="conclusion" class="section level2">
+<h2>Conclusion</h2>
+<p>The CES 2019 phone survey show that most Canadians, regardless of education levels, have a neutral attitude towards immigrants and refugees, and think the number of them should be kept as the same. However, more hostility was observed in people with lower educational status, possibly due to more competition in the job market with newcomers. Future studies can further investigate how other factors, such as socioeconomic status or ethnic/cultural background, could influence attitudes toward refugees and immigrants, in order to better understand and predict Canada’s public opinion on migration.</p>
+</div>
+<div id="references" class="section level2">
+<h2>References</h2>
+<p>Coninck D., 2020. Migrant categorizations and European public opinion: diverging attitudes towards immigrants and refugees. Journal of Ethnic and Migration Studies. 46(9): 1667-1686.</p>
+<p>Dempster H. and Hargrave K., 2017. Understanding public attitudes towards refugees and migrants. The Royal Institute of International Affairs. 6(512).</p>
+<p>Hadley Wickham, Romain François, Lionel Henry and Kirill Müller (2020). dplyr: A Grammar of Data Manipulation.
+<a href="https://dplyr.tidyverse.org" class="uri">https://dplyr.tidyverse.org</a>, <a href="https://github.com/tidyverse/dplyr" class="uri">https://github.com/tidyverse/dplyr</a>.</p>
+<p>Hadley Wickham, Jim Hester and Winston Chang (2020). devtools: Tools to Make Developing R Packages Easier.
+<a href="https://devtools.r-lib.org/" class="uri">https://devtools.r-lib.org/</a>, <a href="https://github.com/r-lib/devtools" class="uri">https://github.com/r-lib/devtools</a>.</p>
+<p>Paul A. Hodgetts and Rohan Alexander (2020). cesR: Access the CES Datasets a Little Easier.. R package version 0.1.0</p>
+<p>Rourke K. and Sinnott R., 2006. The determinants of individual attitudes towards immigration. European Journal of Political Economy. 22:838-861.</p>
+<p>Stephenson, Laura, Allison Harrel, Daniel Rubenson and Peter Loewen. Forthcoming. ‘Measuring Preferences and Behaviour in the 2019 Canadian Election Study,’ Canadian Journal of Political Science.</p>
+<p>Wickham et al., (2019). Welcome to the tidyverse. Journal of Open Source Software, 4(43), 1686,
+<a href="https://doi.org/10.21105/joss.01686" class="uri">https://doi.org/10.21105/joss.01686</a></p>
+</div>
