@@ -16,6 +16,8 @@ devtools::install_github("hodgettsp/cesR")
 library(cesR)
 library(dplyr)
 library(knitr)
+install.packages(c("processx", "later"))
+options(blogdown.generator.server = TRUE)
 ```
 
 ## Introduction
