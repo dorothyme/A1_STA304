@@ -1,6 +1,6 @@
 ---
 title: "Attitudes Toward Refugees and Immigrants in CES 2019"
-author: "Frida Gomam"
+author: "Leqi Sun"
 date: 2020-09-27
 categories: ["R"]
 tags: ["R Markdown", "plot", "regression"]
